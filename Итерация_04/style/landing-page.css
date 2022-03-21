@@ -1,0 +1,27 @@
+@import "normalize.css";
+@import "base.css";
+@import "container.css";
+@import "header.css";
+@import "section1.css";
+@import "section2.css";
+@import "footer.css";
+
+
+.landing-page {
+    flex: 1 1 auto;
+}
+@media (max-width: 1200px) {
+    .landing-page {
+
+    }
+}
+@media (max-width: 992px) {
+    .landing-page {
+
+    }
+}
+@media (max-width: 768px) {
+    .landing-page {
+
+    }
+}

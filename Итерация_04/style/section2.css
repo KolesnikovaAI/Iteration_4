@@ -1,0 +1,51 @@
+.forma {
+	width: 100%;
+	border: 1px solid #DDDFE0;
+	background: linear-gradient(180deg, #FCFCFC 0%, #F7F7F7 100%);
+	border-radius: 6px;
+	margin: 0px auto;
+	max-width: 592px;
+	margin: 40px auto;
+	
+}
+
+.forma_block{
+	width: 388px;
+	display: flex;
+	flex-direction: column;
+	margin: 54px auto;
+	
+}
+
+.forma h3{
+font-weight: bold;
+font-size: 32px;
+line-height: 37px;
+color: #000000;
+padding-bottom: 46px;
+}
+
+.forma input[type="text"], input[type="email"], select {
+	border: 2px solid #E2E2E2;
+	margin-bottom: 37px;
+	height: 53px;
+	
+}
+
+[placeholder]{
+font-size: 14px;
+line-height: 16px;
+color: #4A4A4A;
+}
+
+
+table, tr, td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px 5px;
+}
+
+.table{
+	margin: 0px auto;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,65 @@
+.section1 {
+    background-image: url("../img/Rectangle\ 2.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.section_block{
+	padding-top: 151px;
+	padding-left: 586px;
+	padding-bottom: 50px;
+}
+
+.text_block .subtitle{
+	font-size: 28px;
+	line-height: 32px;
+	color: #1A1919;
+}
+
+.text_block .title{
+	font-weight: bold;
+	font-size: 84px;
+	line-height: 96px;
+	color: #1A1919;
+}
+
+.text_block .text{
+	font-size: 32px;
+	line-height: 42px;
+	color: #000000;
+	padding-bottom: 40px;
+}
+
+.button_block{
+	width: 284px;
+	height: 74px;
+	background-color: #B4141B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
+.button_block .link{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 23px;
+	margin: 0px auto;
+	color: #FFFFFF;
+}
+
+.arrow{
+	display: flex;
+	justify-content: space-between;
+}
+
+.active{
+    background-color:yellow;
+}
+
+.activeText{
+    color:green;
+}

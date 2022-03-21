@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8"><!--используемый набор символов-->
+	<meta name="keywords" content="HTML, CSS, JavaScript"><!--ключевые слова для поисковых систем-->
+	<meta name="description" content="Free Web tutorials"><!--описание веб-страницы-->
+	<meta http-equiv="refresh" content="600"><!--Обновляет документ каждые 30 секунд-->
+
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"><!--область просмотра-->
+	<!--<link rel="icon" type="image/x-icon" href="img/favicon.ico"/>добавление иконки-->
+	<title>Medical</title><!--заголовок документа-->
+	<link href="style/landing-page.css" rel="stylesheet" type="text/css"><!--внешние документы-->
+	<link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet" />
+	<!--<style>
+		body {background-color: powderblue;}
+  		h1 {color: red;}
+  		p {color: blue;}
+	</style><!--глобальные стили; высокий приоритет-->
+	<!--<script>
+		function myFunction() {
+		  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+		}
+	</script>-->
+	<script defer src="js/script.js"></script> <!-- defer-скрипт должен выполняться после разбора документа, но до события DOMContentLoaded-->
+	<!--<base href="https://www.w3schools.com/" target="_blank"><!--Определяет адрес по умолчанию или цель по умолчанию для всех ссылок на странице-->
+</head>
+<body>
+	<div class="page-wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<a class="header__logo" href="https://www.w3schools.com/html/" target="_blank">
+					<img src="./img/Logo.png" alt="Logo">
+				</a>
+				<nav class="menu">
+					<a href="" class="link">ABOUT US</a>
+					<a href="" class="link">SERVICES</a>
+					<a href="" class="link">CONTACT US</a>
+					
+				</nav>
+				<div class="phone">
+					<img src="./img/Phone.png">
+					<div>320- 111-2111 (MED-PRO)</div>
+				</div>
+			</div>
+		</header>
+		<main class="landing-page">
+			<section class="section1">
+				<div class="_container">
+					<div class="section_block">
+						<div class="text_block">
+							<h2 class="subtitle">For Physicians</h2>
+							<h1 class="title">Our Promise</h1>
+							<div class="text">90% First Pass payment within 30 days @up to 3% of collected revenue.</div>
+						</div>
+						<div class="button_block">
+							<a href="" class="link">REACH US</a>
+						</div>
+					</div>
+					<!--<div class="arrow">
+						<img src="./img/ArrowLeft.svg">
+						<img src="./img/ArrowRight.svg">
+					</div>-->
+				</div>
+			</section>
+			<section class="section2">
+				<div class="_container">
+				<form action="" class="forma">
+					<div class="forma_block">
+					<h3>Appointment Form</h3>
+					<input type="text"  name="firstName" placeholder="First Name*">
+					<input type="text" placeholder="Last Name*">
+					<input type="email" placeholder="Email">
+					<select name="country">
+						<option value="Russia">Russia</option>
+						<option value="Spain">Spain</option>
+						<option value="Italy">Italy</option>
+					</select>
+					<input type="radio" name="gender"  value="First visiting" checked>First visiting 
+  					<input type="radio" name="gender" value="Repeat visiting">Repeat visiting 
+					<input type="checkbox" value="Consent to data processing"checked>Consent to data processing
+					<!--<textarea name="message" rows="10" cols="30"></t</div>extarea>-->
+					<!--<button type="button" value="SEND">SEND-->
+					</div>
+
+				</form>
+				<table class="table">
+					<tr>
+						<th>US Address</th>
+						<th>Call Us</th>
+						<th>Write to Us</th>
+					</tr>
+					<tr>
+						<td>41 Lehner Lane Suite 272</td>
+						<td>444-599-3441</td>
+						<td rowspan="2">sales@medpro.com</td>
+					</tr>
+					<tr>
+						<td>52 Lehner Lane Suite 333</td>
+						<td>555-611-4552</td>
+					</tr>
+				</table>
+
+			</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="_container">
+				<div class="block1">
+					<div class="title">About MedPro</div>
+					<div>According to us blisters are a very common thing and we come across them very often in our daily lives. It is a very common occurrence like cold or fever depending upon your lifestyle. </div>
+				</div>
+				<div class="block2">
+					<div class="title">Quick Links</div>
+					<a>What Do We Offer?</a>
+					<a>Coding Services</a><br>
+					<a>FAQ’s</a><br>
+					<a>Contact Us</a>
+				</div>
+				<div class="block3">
+					<div class="title">Stay Connected</div>
+					<div class="img">
+						<a href="https://www.facebook.com/">
+							<img src="./img/iconmonstr-facebook-4.svg">
+						</a>
+						<a href="https://www.twitter.com/">
+							<img src="./img/iconmonstr-linkedin-4.svg">
+						</a>
+						<a href="https://www.twitter.com/">
+							<img src="./img/iconmonstr-twitter-4.svg">
+						</a>
+					</div>
+
+				</div>
+				
+			</div>
+		</footer>
+	</div>
+</body>
+<script>
+	const textElement = document.querySelector('h1');
+	const textElementContent = textElement.innerHTML;
+	textElement.innerHTML= `${textElementContent} <p>Добавленный текст</p>`;
+
+	const button = document.querySelector('.button_block');
+	const buttonText = document.querySelector('.button_block .link');
+
+	button.addEventListener("mouseover", function(event){
+		button.classList.add('active');
+	});
+
+	button.addEventListener("click", function(event){
+		console.log('Клик');
+		buttonText.classList.add('activeText');
+		event.preventDefault();
+	});
+
+	button.addEventListener("mouseout", function(event){
+		button.classList.remove('active');
+	});
+/*
+	// получаем форму по имени или по номеру
+	let form = document.forms.[0];
+	// получаем элемент
+	let elem = form.elements.firstName; // <input name="firstName"> element
+*/
+</script>
+</html>
